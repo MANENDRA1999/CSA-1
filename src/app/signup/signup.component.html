@@ -1,0 +1,49 @@
+<div class="background-image">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form [formGroup]="signupForm" (ngSubmit)="signup()" >
+                    <h1 style="text-align: center;"><strong>User Registration</strong></h1>
+                    <div class="mb-3">
+                        <label class="form-label">First Name</label>
+                        <input  formControlName="FirstName" placeholder="Enter First Name" type="text" class="form-control" id="exampleInputText1">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Last Name</label>
+                        <input  formControlName="LastName" placeholder="Enter Last Name" type="text" class="form-control" id="exampleInputText2">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email Adress</label>
+                        <input  formControlName="Email" placeholder="Enter Email" type="email" class="form-control" id="exampleEmailText2">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mobile Number</label>
+                        <input formControlName="Mobile" placeholder="Enter Mobile Number" type="number" class="form-control" id="exampleNumberText2">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input formControlName="Password" placeholder="Enter Password" type="password" class="form-control"
+                            id="exampleInputPassword3">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </form>
+                <a  style="margin-top: 10px;" routerLink="/login">Already Member? click here to Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .background-image{
+        background-image: url('./assets/images/myimage1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+</style>

@@ -1,0 +1,32 @@
+<div class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Restaurant Menu</h2>
+        <div class="d-flex">
+            <button  routerLink="/cart" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Go To Cart
+            </button>
+            <button routerLink="/login" class="btn btn-danger mx-3">Logout</button>
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Item Id</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Availability</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allRestaurantData">
+            <td>{{data.id}}</td>
+            <td>{{data.itemname}}</td>
+            <td>{{data.category}}</td>
+            <td>{{data.price}}</td>
+            <td>{{data.availability}}</td>
+            <td><button (click)="addcart(data)" class="btn btn-danger">Add To Cart</button></td>
+        </tr>
+    </tbody>
+</table>

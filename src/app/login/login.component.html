@@ -1,0 +1,45 @@
+<div class="background-image">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form [formGroup]="loginForm" (ngSubmit)="login()" >
+                    <ul>
+                        <h1 style="text-align: center;"><strong>User Login</strong></h1>
+                      <li>
+                      <label></label></li>
+                      <li>
+                      <div class="form-outline mb-4">
+                      <input type="email" id="form2Example11" class="form-control" formControlName="email" name="email"
+                        placeholder="email address" required/>
+                      <label class="form-label" for="form2Example11">Email</label>
+                      <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">Email required!!</span>      
+                      </div></li>
+                       <li>
+                          <div class="form-outline mb-4">
+                              <input type="password" id="form2Example22"   placeholder="Password" minlength="8" required class="form-control" formControlName="password" name="passw" />
+                              <label class="form-label" for="form2Example22">Password</label>
+                              <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">Password required!!</span>
+                            </div>
+                        </li>
+                      <button class="butt" [disabled]="!loginForm.value">Sign-in</button>
+                      <button routerLink="/signup" class="btn btn-danger mx-3">New User? click here to Signup</button>
+                
+            </ul>
+        </form>
+        </div>
+    </div>
+</div>
+</div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .background-image{
+        background-image: url('./assets/images/myimage1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+</style>

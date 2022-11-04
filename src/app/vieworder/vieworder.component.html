@@ -1,0 +1,19 @@
+<div class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Orders From Customers</h2>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allOrderData">
+            <td>{{data.id}}</td>
+            <td>{{data.itemname}}</td>
+        </tr>
+    </tbody>
+</table>

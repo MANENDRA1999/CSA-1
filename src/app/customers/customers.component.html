@@ -1,0 +1,25 @@
+<div class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Customers Details</h2>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allCustomerData">
+            <td>{{data.id}}</td>
+            <td>{{data.FirstName}}</td>
+            <td>{{data.LastName}}</td>
+            <td>{{data.Email}}</td>
+            <td>{{data.Mobile}}</td>
+        </tr>
+    </tbody>
+</table>

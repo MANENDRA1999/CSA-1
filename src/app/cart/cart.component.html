@@ -1,0 +1,31 @@
+<div class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2>Cart Details</h2>
+        <div class="d-flex">
+            
+            <button routerLink="/login" class="btn btn-danger mx-3">Logout</button>
+            <button routerLink="/orders" class="btn btn-danger mx-3">MY Orders</button>
+        </div>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Item Id</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allRestaurantData">
+            <td>{{data.id}}</td>
+            <td>{{data.itemname}}</td>
+            <td>{{data.price}}</td>
+            <td><button (click)="deletecart(data)" class="btn btn-danger">Delete Item</button></td>
+ 
+        <td><button (click)="addorder(data)" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Place Order
+        </button></td>
+        </tr>
+    </tbody>
+</table>

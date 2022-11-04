@@ -1,0 +1,38 @@
+<div class="background-image">
+    <h1>Admin Login</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form [formGroup]="loginForm" (ngSubmit)="login()" >
+                    <h1 style="text-align: center;"><strong>Admin Login</strong></h1>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input formControlName="Email" placeholder="Enter Email" type="email" class="form-control" id="exampleInputEmail1">
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input formControlName="Password" placeholder="Enter Password" type="password" class="form-control"
+                            id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <a style="margin-top: 10px;" routerLink="/adminsignup">New User? click here to Signup</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .background-image{
+        background-image: url('./assets/images/myimage4.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+</style>

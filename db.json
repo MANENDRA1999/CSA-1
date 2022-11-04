@@ -1,0 +1,92 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "itemname": "Chicken Biryani",
+      "category": "Biryani",
+      "price": 399,
+      "availability": "Available"
+    },
+    {
+      "id": 2,
+      "itemname": "Chicken Lollypop",
+      "category": "Non-Veg Starter",
+      "price": 299,
+      "availability": "Available"
+    },
+    {
+      "id": 3,
+      "itemname": "Thums Up",
+      "category": "Soft Drink",
+      "price": 30,
+      "availability": "Available"
+    },
+    {
+      "id": 4,
+      "itemname": "Mutton Biryani",
+      "category": "Biryani ",
+      "price": 499,
+      "availability": "available"
+    },
+    {
+      "itemname": "Chicken Tandoori",
+      "category": "NOn-veg starter",
+      "price": 299,
+      "availability": "Available",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "itemname": "Chilli Chicken",
+      "category": "Non-Veg Starter",
+      "price": 299,
+      "availability": "Available"
+    },
+    {
+      "id": 7,
+      "itemname": "Paneer Biryani",
+      "category": "Veg Biryani",
+      "price": 299,
+      "availability": "Not Available"
+    },
+    {
+      "id": 8,
+      "itemname": "Dilkush Biryani",
+      "category": "Biryani",
+      "price": 599,
+      "availability": "Available"
+    }
+  ],
+  "signup": [
+    {
+      "FirstName": "Mike",
+      "LastName": "Taison",
+      "Email": "miketaison123@gmail.com",
+      "Mobile": 4141414141,
+      "Password": "Taison@123",
+      "id": 1
+    }
+  ],
+  "adminsignup": [
+    {
+      "FirstName": "james",
+      "LastName": "cameron",
+      "Email": "jamescameron456@gmail.com",
+      "Mobile": 5454545454,
+      "Password": "James@123",
+      "id": 1
+    }
+  ],
+  "cart": [],
+  "order": [
+    {
+      "id": 1,
+      "itemname": "Chicken Biryani",
+      "price": 399
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
